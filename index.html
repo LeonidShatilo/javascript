@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><code>Equality comparisons and sameness</code></div>
+      <div class="wrapper-value">
+        <code>const number = 0;</code>
+        <code>const string = '0';</code>
+        <code>const object = new String('0');</code>
+        <code>const boolean = false;</code>
+      </div>
+      <div class="form-check">
+        <div class="box-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="equality"
+            value="loose"
+            id="equality-loose"
+            checked
+          />
+          <label class="form-check-label" for="equality-loose">
+            <code><b>Loose equality using ==</b></code>
+          </label>
+        </div>
+        <div class="box-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="equality"
+            value="strict"
+            id="equality-strict"
+          />
+          <label class="form-check-label" for="equality-strict">
+            <code><b>Strict equality using ===</b></code>
+          </label>
+        </div>
+      </div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th rowspan="2" colspan="2" scope="row"></th>
+            <th colspan="6" scope="col">
+              <code>Operand B</code>
+            </th>
+          </tr>
+          <tr>
+            <th><code>Undefined</code></th>
+            <th><code>Null</code></th>
+            <th><code>Number</code></th>
+            <th><code>String</code></th>
+            <th><code>Boolean</code></th>
+            <th><code>Object</code></th>
+          </tr>
+          <tr>
+            <th rowspan="6" scope="row"><code>Operand A</code></th>
+            <th>
+              <code>Undefined</code>
+            </th>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+          </tr>
+          <tr>
+            <th><code>Null</code></th>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+            <td id="10"></td>
+            <td id="11"></td>
+            <td id="12"></td>
+          </tr>
+          <tr>
+            <th><code>Number</code></th>
+            <td id="13"></td>
+            <td id="14"></td>
+            <td id="15"></td>
+            <td id="16"></td>
+            <td id="17"></td>
+            <td id="18"></td>
+          </tr>
+          <tr>
+            <th><code>String</code></th>
+            <td id="19"></td>
+            <td id="20"></td>
+            <td id="21"></td>
+            <td id="22"></td>
+            <td id="23"></td>
+            <td id="24"></td>
+          </tr>
+          <tr>
+            <th><code>Boolean</code></th>
+            <td id="25"></td>
+            <td id="26"></td>
+            <td id="27"></td>
+            <td id="28"></td>
+            <td id="29"></td>
+            <td id="30"></td>
+          </tr>
+          <tr>
+            <th><code>Object</code></th>
+            <td id="31"></td>
+            <td id="32"></td>
+            <td id="33"></td>
+            <td id="34"></td>
+            <td id="35"></td>
+            <td id="36"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
