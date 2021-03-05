@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   font-size: 10px;
 }
 
@@ -22,25 +22,36 @@ label {
 
 label,
 code {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 td,
 th {
   padding: 10px;
-  width: 15rem;
+  width: 16rem;
   height: 5rem;
   text-align: center;
-  background-color: #e6edf1;
+  background-color: #e3f3fb;
 }
 
-.container {
+.container-equality {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.conrainer-operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
 .title {
@@ -48,7 +59,7 @@ th {
 }
 
 .title > code {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -70,6 +81,10 @@ th {
   align-items: center;
 }
 
-.box-check:first-child {
-  margin-bottom: 1rem;
+.box-check {
+  margin-bottom: 0.5rem;
+}
+
+.box-check:last-child {
+  margin-bottom: 0;
 }
