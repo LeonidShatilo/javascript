@@ -1,45 +1,3 @@
-const undefinedUndefined = document.getElementById('1');
-const undefinedNull = document.getElementById('2');
-const undefinedNumber = document.getElementById('3');
-const undefinedString = document.getElementById('4');
-const undefinedBoolean = document.getElementById('5');
-const undefinedObject = document.getElementById('6');
-
-const nullUndefined = document.getElementById('7');
-const nullNull = document.getElementById('8');
-const nullNumber = document.getElementById('9');
-const nullString = document.getElementById('10');
-const nullBoolean = document.getElementById('11');
-const nullObject = document.getElementById('12');
-
-const numberUndefined = document.getElementById('13');
-const numberNull = document.getElementById('14');
-const numberNumber = document.getElementById('15');
-const numberString = document.getElementById('16');
-const numberBoolean = document.getElementById('17');
-const numberObject = document.getElementById('18');
-
-const stringUndefined = document.getElementById('19');
-const stringNull = document.getElementById('20');
-const stringNumber = document.getElementById('21');
-const stringString = document.getElementById('22');
-const stringBoolean = document.getElementById('23');
-const stringObject = document.getElementById('24');
-
-const booleanUndefined = document.getElementById('25');
-const booleanNull = document.getElementById('26');
-const booleanNumber = document.getElementById('27');
-const booleanString = document.getElementById('28');
-const booleanBoolean = document.getElementById('29');
-const booleanObject = document.getElementById('30');
-
-const objectUndefined = document.getElementById('31');
-const objectNull = document.getElementById('32');
-const objectNumber = document.getElementById('33');
-const objectString = document.getElementById('34');
-const objectBoolean = document.getElementById('35');
-const objectObject = document.getElementById('36');
-
 const radio = document.getElementsByName('equality');
 
 const number = 0;
@@ -51,6 +9,13 @@ const trueColor = '#bfe39f';
 const falseColor = '#e39f9f';
 
 let equality = 'loose';
+let arrayOfElements = [];
+let elementID = 1;
+
+for (let index = 0; index < 36; index++) {
+  arrayOfElements[index] = document.getElementById(`${elementID}`);
+  elementID++;
+}
 
 function inputTrue(element) {
   element.innerHTML = `<code>true</code>`;
@@ -82,47 +47,47 @@ function compareOperands(operandA, operandB, element) {
 }
 
 function runCompare() {
-  compareOperands(undefined, undefined, undefinedUndefined);
-  compareOperands(undefined, null, undefinedNull);
-  compareOperands(undefined, number, undefinedNumber);
-  compareOperands(undefined, string, undefinedString);
-  compareOperands(undefined, boolean, undefinedBoolean);
-  compareOperands(undefined, object, undefinedObject);
+  compareOperands(undefined, undefined, arrayOfElements[0]);
+  compareOperands(undefined, null, arrayOfElements[1]);
+  compareOperands(undefined, number, arrayOfElements[2]);
+  compareOperands(undefined, string, arrayOfElements[3]);
+  compareOperands(undefined, boolean, arrayOfElements[4]);
+  compareOperands(undefined, object, arrayOfElements[5]);
 
-  compareOperands(null, undefined, nullUndefined);
-  compareOperands(null, null, nullNull);
-  compareOperands(null, number, nullNumber);
-  compareOperands(null, string, nullString);
-  compareOperands(null, boolean, nullBoolean);
-  compareOperands(null, object, nullObject);
+  compareOperands(null, undefined, arrayOfElements[6]);
+  compareOperands(null, null, arrayOfElements[7]);
+  compareOperands(null, number, arrayOfElements[8]);
+  compareOperands(null, string, arrayOfElements[9]);
+  compareOperands(null, boolean, arrayOfElements[10]);
+  compareOperands(null, object, arrayOfElements[11]);
 
-  compareOperands(number, undefined, numberUndefined);
-  compareOperands(number, null, numberNull);
-  compareOperands(number, number, numberNumber);
-  compareOperands(number, string, numberString);
-  compareOperands(number, boolean, numberBoolean);
-  compareOperands(number, object, numberObject);
+  compareOperands(number, undefined, arrayOfElements[12]);
+  compareOperands(number, null, arrayOfElements[13]);
+  compareOperands(number, number, arrayOfElements[14]);
+  compareOperands(number, string, arrayOfElements[15]);
+  compareOperands(number, boolean, arrayOfElements[16]);
+  compareOperands(number, object, arrayOfElements[17]);
 
-  compareOperands(string, undefined, stringUndefined);
-  compareOperands(string, null, stringNull);
-  compareOperands(string, number, stringNumber);
-  compareOperands(string, string, stringString);
-  compareOperands(string, boolean, stringBoolean);
-  compareOperands(string, object, stringObject);
+  compareOperands(string, undefined, arrayOfElements[18]);
+  compareOperands(string, null, arrayOfElements[19]);
+  compareOperands(string, number, arrayOfElements[20]);
+  compareOperands(string, string, arrayOfElements[21]);
+  compareOperands(string, boolean, arrayOfElements[22]);
+  compareOperands(string, object, arrayOfElements[23]);
 
-  compareOperands(boolean, undefined, booleanUndefined);
-  compareOperands(boolean, null, booleanNull);
-  compareOperands(boolean, number, booleanNumber);
-  compareOperands(boolean, string, booleanString);
-  compareOperands(boolean, boolean, booleanBoolean);
-  compareOperands(boolean, object, booleanObject);
+  compareOperands(boolean, undefined, arrayOfElements[24]);
+  compareOperands(boolean, null, arrayOfElements[25]);
+  compareOperands(boolean, number, arrayOfElements[26]);
+  compareOperands(boolean, string, arrayOfElements[27]);
+  compareOperands(boolean, boolean, arrayOfElements[28]);
+  compareOperands(boolean, object, arrayOfElements[29]);
 
-  compareOperands(object, undefined, objectUndefined);
-  compareOperands(object, null, objectNull);
-  compareOperands(object, number, objectNumber);
-  compareOperands(object, string, objectString);
-  compareOperands(object, boolean, objectBoolean);
-  compareOperands(object, object, objectObject);
+  compareOperands(object, undefined, arrayOfElements[30]);
+  compareOperands(object, null, arrayOfElements[31]);
+  compareOperands(object, number, arrayOfElements[32]);
+  compareOperands(object, string, arrayOfElements[33]);
+  compareOperands(object, boolean, arrayOfElements[34]);
+  compareOperands(object, object, arrayOfElements[35]);
 }
 
 radio.forEach((element) => {
