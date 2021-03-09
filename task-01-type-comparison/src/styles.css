@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: 10px;
+}
+
+input {
+  margin-right: 1rem;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+label,
+code {
+  font-size: 1.5rem;
+}
+
+td,
+th {
+  padding: 10px;
+  width: 16rem;
+  height: 5rem;
+  text-align: center;
+  background-color: #e3f3fb;
+}
+
+.container-equality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.conrainer-operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.title > code {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.wrapper-value {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.box-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-check {
+  margin-bottom: 0.5rem;
+}
+
+.box-check:last-child {
+  margin-bottom: 0;
+}
