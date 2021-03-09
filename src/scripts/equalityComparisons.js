@@ -5,14 +5,16 @@ const string = '0';
 const object = new String('0');
 const boolean = false;
 
+const arrayOfOperands = [undefined, null, number, string, boolean, object];
 const trueColor = '#bfe39f';
 const falseColor = '#e39f9f';
+const numberOfCells = 36;
 
 let equality = 'loose';
 let arrayOfElements = [];
 let elementID = 1;
 
-for (let index = 0; index < 36; index++) {
+for (let index = 0; index < numberOfCells; index++) {
   arrayOfElements[index] = document.getElementById(`${elementID}`);
   elementID++;
 }
@@ -47,47 +49,21 @@ function compareOperands(operandA, operandB, element) {
 }
 
 function runCompare() {
-  compareOperands(undefined, undefined, arrayOfElements[0]);
-  compareOperands(undefined, null, arrayOfElements[1]);
-  compareOperands(undefined, number, arrayOfElements[2]);
-  compareOperands(undefined, string, arrayOfElements[3]);
-  compareOperands(undefined, boolean, arrayOfElements[4]);
-  compareOperands(undefined, object, arrayOfElements[5]);
+  let indexID = 0;
 
-  compareOperands(null, undefined, arrayOfElements[6]);
-  compareOperands(null, null, arrayOfElements[7]);
-  compareOperands(null, number, arrayOfElements[8]);
-  compareOperands(null, string, arrayOfElements[9]);
-  compareOperands(null, boolean, arrayOfElements[10]);
-  compareOperands(null, object, arrayOfElements[11]);
+  for (let operandA = 0; operandA < arrayOfOperands.length; operandA++) {
+    for (let operandB = 0; operandB < arrayOfOperands.length; operandB++) {
+      compareOperands(
+        arrayOfOperands[operandA],
+        arrayOfOperands[operandB],
+        arrayOfElements[indexID]
+      );
 
-  compareOperands(number, undefined, arrayOfElements[12]);
-  compareOperands(number, null, arrayOfElements[13]);
-  compareOperands(number, number, arrayOfElements[14]);
-  compareOperands(number, string, arrayOfElements[15]);
-  compareOperands(number, boolean, arrayOfElements[16]);
-  compareOperands(number, object, arrayOfElements[17]);
+      indexID++;
+    }
+  }
 
-  compareOperands(string, undefined, arrayOfElements[18]);
-  compareOperands(string, null, arrayOfElements[19]);
-  compareOperands(string, number, arrayOfElements[20]);
-  compareOperands(string, string, arrayOfElements[21]);
-  compareOperands(string, boolean, arrayOfElements[22]);
-  compareOperands(string, object, arrayOfElements[23]);
-
-  compareOperands(boolean, undefined, arrayOfElements[24]);
-  compareOperands(boolean, null, arrayOfElements[25]);
-  compareOperands(boolean, number, arrayOfElements[26]);
-  compareOperands(boolean, string, arrayOfElements[27]);
-  compareOperands(boolean, boolean, arrayOfElements[28]);
-  compareOperands(boolean, object, arrayOfElements[29]);
-
-  compareOperands(object, undefined, arrayOfElements[30]);
-  compareOperands(object, null, arrayOfElements[31]);
-  compareOperands(object, number, arrayOfElements[32]);
-  compareOperands(object, string, arrayOfElements[33]);
-  compareOperands(object, boolean, arrayOfElements[34]);
-  compareOperands(object, object, arrayOfElements[35]);
+  indexID = 0;
 }
 
 radio.forEach((element) => {
