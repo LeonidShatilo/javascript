@@ -1,7 +1,5 @@
-# javascript
+# frontend-lab
 
-**Task**
+**[Task 1](https://github.com/LeonidShatilo/frontend-lab/task-01-type-comparison)** – Analysis of strict and nonstrict comparison operators, as well as mathematical calculations between different data types.
 
-To analyze the operation of the strict and non-strict comparison operators.
 
-**[DEMO](https://leonidshatilo.github.io/javascript/)**
