@@ -115,3 +115,17 @@ input[type='number'] {
   color: #dd1717;
   user-select: none;
 }
+
+@media screen and (max-width: 1050px) {
+  .chart-container {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .chart-container {
+    width: 600px;
+    height: 300px;
+  }
+}
