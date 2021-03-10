@@ -174,6 +174,8 @@ INPUT_NUMBER.addEventListener('blur', () => {
 });
 
 INPUT_NUMBER.oninput = () => {
+  INPUT_NUMBER.value = INPUT_NUMBER.value.slice(0, 6);
+
   if (+INPUT_NUMBER.value < 0) {
     addErrorSettings();
     useErrorColors();
@@ -183,11 +185,6 @@ INPUT_NUMBER.oninput = () => {
     addErrorSettings();
     useErrorColors();
     addErrorText('⚠ Enter a number greater than zero!');
-  }
-  if (+INPUT_NUMBER.value > 999999) {
-    addErrorSettings();
-    useErrorColors();
-    addErrorText('⚠ Sorry, too big a number. Browser may freeze.');
   }
   if (+INPUT_NUMBER.value > 0 && +INPUT_NUMBER.value <= 999999) {
     removeErrorSettings();
