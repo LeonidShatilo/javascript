@@ -71,6 +71,16 @@ input[type='number'] {
   user-select: none;
 }
 
+.input-focus-colors {
+  border: 2px solid #a4cc88;
+  box-shadow: 0 0 0 5px rgba(143, 231, 164, 0.25);
+}
+
+.input-error-colors {
+  border: 2px solid #cd8383;
+  box-shadow: 0 0 0 5px rgba(231, 143, 143, 0.25);
+}
+
 .generate-button {
   display: flex;
   align-items: center;
