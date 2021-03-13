@@ -1,23 +1,23 @@
 import { gaussianChart, removeDataChart } from './chart.js';
-import { keysArray, gaussObject, randomNumbersArray } from './gaussLogic.js';
+import { keysArray, randomNumbersArray } from './gaussLogic.js';
 
 export const INPUT_NUMBER = document.querySelector('.input-number');
 export const GENERATE_BUTTON = document.querySelector('.generate-button');
 
-export function clearArrays() {
+let gaussObject = {};
+
+function clearArrays() {
   randomNumbersArray.length = 0;
   keysArray.length = 0;
 }
 
-export function clearObject(obj) {
-  for (let prop in obj) {
-    delete obj[prop];
-  }
+function clearObject() {
+  gaussObject = {};
 }
 
 export function removeAllData() {
   clearArrays();
-  clearObject(gaussObject);
+  clearObject();
   removeDataChart(gaussianChart);
 }
 

@@ -9,7 +9,6 @@ import {
 let amountOfNumbers;
 export let randomNumbersArray = [];
 export let keysArray = [];
-export let gaussObject = {};
 
 export function generateRandomNumberBoxMuller() {
   let u = 0;
