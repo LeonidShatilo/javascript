@@ -4,12 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Sum of Range</title>
   </head>
   <body>
+    <div class="content">
+      <h1 class="title">Sum of Range</h1>
+      <h3 class="subtitle">Enter the minimum and maximum value of the range</h3>
+      <div class="settings-wrapper">
+        <div class="inputs">
+          <input id="min" class="input-number" type="number" value="1" />
+          <input id="max" class="input-number" type="number" value="100" />
+        </div>
+        <button class="summing-button">Summing</button>
+      </div>
+      <div class="result-wrapper">
+        <p class="result-title">Result:</p>
+        <p class="result-sum"></p>
+      </div>
+      <p class="error">&nbsp;</p>
+    </div>
+    <script type="module" src="./src/scripts/utils.js"></script>
+    <script type="module" src="./src/scripts/styles.js"></script>
     <script type="module" src="./src/scripts/memoization.js"></script>
     <script type="module" src="./src/scripts/check.js"></script>
     <script type="module" src="./src/scripts/calculate.js"></script>
     <script type="module" src="./src/scripts/main.js"></script>
+    <script type="module" src="./src/scripts/errorHandling.js"></script>
+    <script type="module" src="./src/scripts/listener.js"></script>
   </body>
 </html>
