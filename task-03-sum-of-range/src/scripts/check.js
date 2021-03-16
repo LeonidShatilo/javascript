@@ -8,10 +8,7 @@ export function checkArguments(min, max) {
   }
 
   if (min > max) {
-    [min, max] = [max, min];
-    console.warn(
-      'The minimum value is greater than the maximum value. The order of the arguments has been changed.'
-    );
+    throw new Error('The minimum value is greater than the maximum value.');
   }
 
   return [min, max];
