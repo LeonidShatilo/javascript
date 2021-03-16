@@ -32,6 +32,7 @@ function randn_bm() {
 
 - Generate 10 numbers using the provided function `randn_bm`.
 - Create an object with the keys associated with the generated numbers and the value as the number of corresponding numbers.
+- Example of object: `{ 0: 5, 1: 3, 2: 2 }`.
 - Visualize the distribution of the numbers.
 
 ---
