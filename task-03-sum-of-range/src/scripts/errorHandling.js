@@ -11,7 +11,7 @@ export function addErrorSettings(input) {
   if (input === 'max') {
     isMaxError = true;
   }
-  if (isMinError || isMinError) {
+  if (isMinError || isMaxError) {
     SUMMING_BUTTON.disabled = true;
   }
 }
@@ -23,7 +23,7 @@ export function removeErrorSettings(input) {
   if (input === 'max') {
     isMaxError = false;
   }
-  if (!isMinError && !isMinError) {
+  if (!isMinError && !isMaxError) {
     SUMMING_BUTTON.disabled = false;
   }
 }
