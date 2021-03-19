@@ -1,16 +1,16 @@
 # frontend-lab
 
-**Task 1**
+### Task 1. Type Comparison
 
-**[DEMO](https://leonidshatilo.github.io/frontend-lab/task-01-type-comparison/index)** | **[Code Review](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-01-type-comparison)**
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-01-type-comparison/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-01-type-comparison)
 
 Make an analysis of strict and non-strict comparison operators, as well as mathematical calculations between different data types.
 
 ---
 
-**Task 2**
+### Task 2. Object Gauss
 
-**[DEMO](https://leonidshatilo.github.io/frontend-lab/task-02-object-gauss/index)** | **[Code Review](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-02-object-gauss)**
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-02-object-gauss/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-02-object-gauss)
 
 The following function is provided:
 
@@ -37,9 +37,9 @@ function randn_bm() {
 
 ---
 
-**Task 3**
+### Task 3. Sum of Range
 
-**[DEMO](https://leonidshatilo.github.io/frontend-lab/task-03-sum-of-range/index)** | **[Code Review](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-03-sum-of-range)**
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-03-sum-of-range/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-03-sum-of-range)
 
 - Implement function `range(min, max)` that can return sum of integer numbers in range [min, max].
 - Consider edge cases: result is greater than `Number.MAX_SAFE_INTEGER`, argument is not a number, min > max, etc.
