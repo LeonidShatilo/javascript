@@ -24,10 +24,9 @@ function summing() {
 }
 
 INPUTS.addEventListener('keypress', (event) => {
-  if (event.key === 'Enter') {
-    if (isMinError || isMaxError) {
-      return;
-    }
+  let isEnter = event.key === 'Enter';
+
+  if (isEnter && !isMinError && !isMaxError) {
     summing();
   }
 });
