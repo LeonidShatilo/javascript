@@ -46,3 +46,12 @@ function randn_bm() {
 - **\* An additional assignment:** For performance reason add memoization mechanism.
 
 ---
+
+### Task 4. Memory Managment
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-04-memory-managment/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-04-memory-managment)
+
+- Implement a function that leads to the stack overflow issue.
+- Implement a function that can affect memory leak issue.
+
+---
