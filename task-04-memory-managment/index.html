@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Memory Managment</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <h1 class="title">Memory Managment</h1>
+      <div class="info-wrapper">
+        <ol>
+          <li>Press <b>F12</b> to open the console.</li>
+          <li>
+            Type <b>run()</b>, press <b>Enter</b>, and wait a few seconds until
+            the error
+            <span class="error">«Maximum call stack size exceeded appears»</span
+            >. The run function is a recursive function that counts the number
+            of calls and creates and adds new elements to the HTML. Each element
+            contains the call number and the current time in milliseconds.
+          </li>
+          <li>
+            Type <b>getStats()</b> and press <b>Enter</b> to see the statistics.
+            Notice how many times the function was called before the stack
+            overflowed.
+          </li>
+          <li>Reload the page.</li>
+          <li>
+            Type <b>runWithTimeout()</b> and press <b>Enter</b>. Notice that now
+            the stack does not overflow and the recursive function can run
+            indefinitely. In the runWithTimeout function we do the same thing as
+            in the run function, only the next function call is placed in
+            setTimeout.
+          </li>
+          <li>???</li>
+          <li>Profit! We got rid of the stack overflow. 😎</li>
+        </ol>
+      </div>
+      <div id="nodes"></div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
