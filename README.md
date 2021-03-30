@@ -55,3 +55,13 @@ function randn_bm() {
 - Implement a function that can affect memory leak issue.
 
 ---
+
+### Task 5. Inheritance
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-05-inheritance/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-05-inheritance)
+
+- Describe base class Entity that can store name.
+- Implement child classes Stuff, Box, User. Box can store some stuff[]. Every box belongs to a user.
+- Add examples of usage of these classes, e.g., create some instances, display data related to them.
+
+---
