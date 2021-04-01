@@ -26,7 +26,7 @@ class Stuff extends Entity {
 class Box extends Entity {
   constructor(name, stuff) {
     super(name);
-    this._stuff = stuff ? stuff : [];
+    this._stuff = stuff || [];
   }
 
   getBoxStuff() {
