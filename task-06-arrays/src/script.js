@@ -18,9 +18,9 @@ function getArrayLetters() {
     .split('');
 }
 
-function calculateFrequencyOfLetters(arr) {
+function calculateQuantityOfLetters(arrayOfLetters) {
   return Array.from(
-    arr
+    arrayOfLetters
       .reduce(
         (map, value) => map.set(value, map.has(value) ? map.get(value) + 1 : 1),
         new Map()
@@ -34,8 +34,8 @@ function clearTable() {
   ROW.forEach((elem) => elem.remove());
 }
 
-function fillTable(array) {
-  array.forEach((arr) => {
+function fillTable(sortedArray) {
+  sortedArray.forEach((arr) => {
     const TR = document.createElement('tr');
     TR.className = 'row';
 
@@ -50,8 +50,8 @@ function fillTable(array) {
   });
 }
 
-function errorHandling(arr) {
-  if (arr.length === 0) {
+function errorHandling(arrayOfLetters) {
+  if (arrayOfLetters.length === 0) {
     ERROR.innerHTML =
       'There must be at least one alphabetic character in the text area.';
     ERROR.classList.add('visible');
@@ -63,12 +63,23 @@ function errorHandling(arr) {
   }
 }
 
+function calculateFrequencyOfLetters(sortedArray, arrayOfLetters) {
+  sortedArray.forEach((arr) => {
+    const QUANTITY = arr[1];
+    const TOTAL_QUANTITY = arrayOfLetters.length;
+    const FREQUENCY = ((QUANTITY / TOTAL_QUANTITY) * 100).toFixed(2);
+
+    arr.push(FREQUENCY);
+  });
+}
+
 CALCULATE_BUTTON.addEventListener('click', () => {
   const ARRAY_OF_LETTERS = getArrayLetters();
-  const ARRAY = calculateFrequencyOfLetters(ARRAY_OF_LETTERS);
+  const ARRAY = calculateQuantityOfLetters(ARRAY_OF_LETTERS);
   const SORTED_ARRAY = ARRAY.slice().sort((a, b) => b[1] - a[1]);
 
   errorHandling(ARRAY_OF_LETTERS);
+  calculateFrequencyOfLetters(SORTED_ARRAY, ARRAY_OF_LETTERS);
   clearTable();
   fillTable(SORTED_ARRAY);
 });
