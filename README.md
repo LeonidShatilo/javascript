@@ -65,3 +65,16 @@ function randn_bm() {
 - Add examples of usage of these classes, e.g., create some instances, display data related to them.
 
 ---
+
+### Task 6. Arrays
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-06-arrays/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-06-arrays)
+
+The Russian quote is given. Find most frequent letters.
+
+```javascript
+'Пора перестать ждать неожиданных подарков от жизни, а самому делать жизнь.';
+
+```
+
+---
