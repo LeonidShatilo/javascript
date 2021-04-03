@@ -31,6 +31,14 @@ th {
   border: 2px solid #d7d7d7;
 }
 
+thead tr {
+  background: #f5f5f5;
+}
+
+tbody tr:hover {
+  background: #fff59c;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
