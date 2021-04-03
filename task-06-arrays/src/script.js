@@ -2,6 +2,7 @@ const TEXT_AREA = document.querySelector('.text-area');
 const CALCULATE_BUTTON = document.querySelector('.calculate-button');
 const ERROR = document.querySelector('.error');
 const TABLE = document.querySelector('.table');
+const TABLE_BODY = document.querySelector('.table-body');
 
 function getTextAreaValue() {
   TEXT_AREA.innerHTML = TEXT_AREA.value;
@@ -30,14 +31,14 @@ function calculateQuantityOfLetters(arrayOfLetters) {
 }
 
 function clearTable() {
-  const ROW = document.querySelectorAll('.row');
-  ROW.forEach((elem) => elem.remove());
+  while (TABLE_BODY.firstChild) {
+    TABLE_BODY.firstChild.remove();
+  }
 }
 
 function fillTable(sortedArray) {
   sortedArray.forEach((arr) => {
     const TR = document.createElement('tr');
-    TR.className = 'row';
 
     arr.forEach((value) => {
       const TD = document.createElement('td');
@@ -46,18 +47,15 @@ function fillTable(sortedArray) {
       TR.appendChild(TD);
     });
 
-    TABLE.appendChild(TR);
+    TABLE_BODY.appendChild(TR);
   });
 }
 
 function errorHandling(arrayOfLetters) {
   if (arrayOfLetters.length === 0) {
-    ERROR.innerHTML =
-      'There must be at least one alphabetic character in the text area.';
     ERROR.classList.add('visible');
     TABLE.classList.remove('visible');
   } else {
-    ERROR.innerHTML = '';
     ERROR.classList.remove('visible');
     TABLE.classList.add('visible');
   }
