@@ -14,8 +14,8 @@ function getArrayLetters() {
   let text = getTextAreaValue();
 
   return text
+    .replace(/[^A-Za-zА-Яа-яЁёЎў]/g, '')
     .toLowerCase()
-    .replace(/[^A-Za-zА-Яа-яЁё]/g, '')
     .split('');
 }
 
