@@ -1,4 +1,3 @@
-import { createLayout } from './layout.js';
 import { hideModal, MODAL_RESTART_BUTTON } from './modal.js';
 import { CELLS, CURRENT_MOVE, calculateWinner } from './winner.js';
 
@@ -55,5 +54,3 @@ MODAL_RESTART_BUTTON.addEventListener('click', () => {
     restartGame();
   }, 200);
 });
-
-createLayout();

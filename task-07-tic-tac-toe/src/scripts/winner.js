@@ -30,7 +30,7 @@ export function calculateWinner(cells) {
   });
 
   if (cells.indexOf(null) === -1) {
-    showModal(`No winner`);
+    showModal('No winner');
     CURRENT_MOVE.classList.add('hided');
   }
 
