@@ -22,8 +22,10 @@ body {
 .title {
   margin-bottom: 2rem;
   font-size: 6rem;
-  color: #9a9a9a;
+  font-weight: bold;
+  text-align: center;
   text-transform: capitalize;
+  color: #9a9a9a;
   user-select: none;
 }
 
@@ -31,6 +33,7 @@ body {
   margin-bottom: 70px;
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   color: #9a9a9a;
   transition: all 0.3s ease;
@@ -130,7 +133,7 @@ body {
   color: #9a9a9a;
 }
 
-.modal__confirm-button {
+.modal__restart-button {
   width: 150px;
   height: 50px;
   border-radius: 10px;
@@ -145,7 +148,7 @@ body {
   cursor: pointer;
 }
 
-.modal__confirm-button:active {
+.modal__restart-button:active {
   box-shadow: 0 0 0 #141618, 0 0 0 #3c4248;
 }
 
