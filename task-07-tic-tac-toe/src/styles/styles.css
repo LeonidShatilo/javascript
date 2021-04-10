@@ -19,6 +19,16 @@ body {
   background-color: #33383d;
 }
 
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+
 .title {
   margin-bottom: 2rem;
   font-size: 6rem;
@@ -31,23 +41,13 @@ body {
 
 .current-move {
   margin-bottom: 70px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #9a9a9a;
   transition: all 0.3s ease;
   user-select: none;
-}
-
-.wrapper-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  padding: 30px;
 }
 
 .game-field {
@@ -79,7 +79,7 @@ body {
   cursor: pointer;
 }
 
-.cell:active:not(.filled, .blocked) {
+.cell:active:not(.filled):not(.blocked) {
   box-shadow: 0 0 0 #1a1c1f, 0 0 0 #4d545c;
 }
 
@@ -108,7 +108,7 @@ body {
   left: 0;
   right: 0;
   max-width: max-content;
-  margin-top: 25px;
+  margin-top: 30px;
   padding-bottom: 40px;
   font-size: 2rem;
   font-weight: bold;
@@ -127,8 +127,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 80px;
-  font-size: 4rem;
+  padding: 20px 110px 30px;
+  font-size: 4.5rem;
   text-align: center;
   color: #9a9a9a;
 }
