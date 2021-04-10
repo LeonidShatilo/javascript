@@ -30,12 +30,12 @@ export function calculateWinner(cells) {
   });
 
   if (cells.indexOf(null) === -1) {
-    showModal('No winner');
+    showModal('Draw!');
     CURRENT_MOVE.classList.add('hided');
   }
 
   if (winner) {
-    showModal(`${winner} is a winner!`);
+    showModal(`${winner} won!`);
     CURRENT_MOVE.classList.add('hided');
 
     CELLS.forEach((element) => {
