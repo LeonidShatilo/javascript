@@ -152,11 +152,11 @@ body {
   box-shadow: 0 0 0 #141618, 0 0 0 #3c4248;
 }
 
-.modal__visible {
+.modal--visible {
   transform: translateY(0);
   opacity: 1;
 }
 
-.modal__hide {
+.modal--hide {
   transform: translateY(-100vh);
 }

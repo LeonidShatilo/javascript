@@ -4,15 +4,15 @@ export const MODAL_RESTART_BUTTON = document.querySelector('.modal__restart-butt
 
 export function showModal(message) {
   MODAL_MESSAGE.textContent = message;
-  MODAL.classList.add('modal__visible');
+  MODAL.classList.add('modal--visible');
 }
 
 export function hideModal() {
-  MODAL.classList.add('modal__hide');
+  MODAL.classList.add('modal--hide');
   MODAL_MESSAGE.textContent = '';
 
   setTimeout(() => {
-    MODAL.classList.remove('modal__visible');
-    MODAL.classList.remove('modal__hide');
+    MODAL.classList.remove('modal--visible');
+    MODAL.classList.remove('modal--hide');
   }, 1000);
 }
