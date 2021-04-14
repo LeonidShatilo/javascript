@@ -12,10 +12,10 @@ function restartGame() {
   cells = Array(9).fill(null);
 
   CELLS.forEach((cell) => {
+    const CLASSES = ['filled', 'blocked', 'highlighted'];
+
     cell.textContent = '';
-    cell.classList.remove('filled');
-    cell.classList.remove('blocked');
-    cell.classList.remove('highlighted');
+    CLASSES.forEach((className) => cell.classList.remove(className));
   });
 
   SYMBOL.textContent = '✖';
