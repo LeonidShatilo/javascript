@@ -75,3 +75,13 @@ The Russian quote is given. Find most frequent letters.
 `Пора перестать ждать неожиданных подарков от жизни, а самому делать жизнь.`
 
 ---
+
+### Task 7. Tic-Tac-Toe
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-07-tic-tac-toe/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-07-tic-tac-toe)
+
+- Using JavaScript constructs on page Tic-Tac-Toe layout.
+- Add possibility to interact with layout by mouse click (add «X» or «O»).
+- Add a module that can write down on page game result (1st win, 2nd win, or draw).
+
+---
