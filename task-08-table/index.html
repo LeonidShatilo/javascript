@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="buttons-wrapper">
+        <button class="button-plus" title="Add a new contact">
+          <span></span>
+        </button>
+        <button class="button-minus" title="Delete some contacts">
+          <span></span>
+        </button>
+      </div>
+      <h1 class="title">Contacts</h1>
+      <table class="table">
+        <thead class="table-head">
+          <tr>
+            <th data-column="number" data-order="unset">#</th>
+            <th data-column="firstName" data-order="unset">First Name</th>
+            <th data-column="lastName" data-order="unset">Last Name</th>
+            <th data-column="city" data-order="unset">City</th>
+            <th data-column="phone" data-order="unset">Phone</th>
+            <th data-column="email" data-order="unset">e-mail</th>
+          </tr>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>
+    </div>
+    <script type="module" src="./src/scripts/data.js"></script>
+    <script type="module" src="./src/scripts/localStorage.js"></script>
+    <script type="module" src="./src/scripts/buildTable.js"></script>
+    <script type="module" src="./src/scripts/main.js"></script>
+    <script type="module" src="./src/scripts/listener.js"></script>
+  </body>
+</html>
