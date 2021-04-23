@@ -85,3 +85,13 @@ The Russian quote is given. Find most frequent letters.
 - Add a module that can write down on page game result (1st win, 2nd win, or draw).
 
 ---
+
+### Task 8. Table
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-08-table/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-08-table)
+
+- Add to HTML page table with header and some rows.
+- Add to header event listener to implement sorting functionality across the table data (alphabetical).
+- Add to cells user interaction feature (click and edit text).
+
+---
