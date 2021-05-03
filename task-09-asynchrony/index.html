@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchrony</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Reverse Polish Notation Calculator</h1>
+      <div class="content-wrapper">
+        <div class="control-wrapper">
+          <input class="input" type="text" value="1 2 + 3 * 4 +" />
+          <button class="calculate-button">calculate</button>
+        </div>
+        <div class="output-wrapper">
+          <h2 class="solution">solution</h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid"
+            viewBox="0 0 100 100"
+            class="loader"
+          >
+            <defs />
+            <circle
+              cx="50"
+              cy="50"
+              r="30"
+              fill="none"
+              stroke="#bcbcbc"
+              stroke-dasharray="141 49"
+              stroke-width="10"
+            >
+              <animateTransform
+                attributeName="transform"
+                dur="0.6493506493506493s"
+                keyTimes="0;1"
+                repeatCount="indefinite"
+                type="rotate"
+                values="0 50 50;360 50 50"
+              />
+            </circle>
+          </svg>
+          <ul class="output"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/scripts/delay.js"></script>
+    <script type="module" src="./src/scripts/operators.js"></script>
+    <script type="module" src="./src/scripts/check.js"></script>
+    <script type="module" src="./src/scripts/utils.js"></script>
+    <script type="module" src="./src/scripts/calculation.js"></script>
+    <script type="module" src="./src/scripts/listener.js"></script>
+  </body>
+</html>

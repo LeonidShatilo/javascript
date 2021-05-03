@@ -95,3 +95,13 @@ The Russian quote is given. Find most frequent letters.
 - Add to cells user interaction feature (click and edit text).
 
 ---
+
+### Task 9. Asynchrony
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-09-asynchrony/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-09-asynchrony)
+
+- Develop 4 function that can perform operations `+, -, *, /` but return result with some random delay (> than 1 sec).
+- Create stack calculation module that can interact with mentioned before functions and handle Reverse Polish Notation input.
+- Calculate `1 2 + 3 * 4 +`.
+
+---
