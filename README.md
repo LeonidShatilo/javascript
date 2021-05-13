@@ -115,3 +115,12 @@ The Russian quote is given. Find most frequent letters.
 - Handle possible error cases.
 
 ---
+
+### Task 11. Babel Compiler
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-11-babel-compiler/dist/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-11-babel-compiler)
+
+- Convert your code from the previous task by the Babel transpiler to ES5 version.
+- Check working status of app for different browsers.
+
+---
