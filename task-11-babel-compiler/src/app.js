@@ -1,0 +1,11 @@
+import './index.html';
+import './styles/styles.css';
+import './scripts/utils';
+import './scripts/date';
+import './scripts/codes';
+import './scripts/createList';
+import './scripts/error';
+import './scripts/convert';
+import './scripts/api';
+import './scripts/main';
+import './scripts/listener';
