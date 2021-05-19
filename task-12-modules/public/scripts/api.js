@@ -1,6 +1,6 @@
-import { convert } from './convert.js';
-import { showError, hideError } from './error.js';
-import { INPUT_BASE, setBaseInput, values } from './utils.js';
+const utils = await import('./utils.js');
+const errorModule = await import('./error.js');
+const convert = await import('./convert.js');
 
 export function getRateData(base, symbol) {
   const URL = `https://api.ratesapi.io/api/latest?base=${base}&symbols=${symbol}`;
@@ -14,13 +14,13 @@ export function getRateData(base, symbol) {
       .then((data) => {
         const RATE = data.rates[symbol];
 
-        INPUT_BASE.value === '' && setBaseInput(1);
-        values.symbol = RATE;
-        convert();
-        hideError();
+        utils.INPUT_BASE.value === '' && utils.setBaseInput(1);
+        utils.values.symbol = RATE;
+        convert.convert();
+        errorModule.hideError();
       })
       .catch((error) => {
-        showError(error);
+        errorModule.showError(error);
         console.error(error);
       });
   });

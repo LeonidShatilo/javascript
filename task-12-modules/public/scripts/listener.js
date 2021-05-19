@@ -1,14 +1,6 @@
-import {
-  SELECT_BASE,
-  SELECT_SYMBOL,
-  INPUT_BASE,
-  INPUT_SYMBOL,
-  ARROW_BASE,
-  ARROW_SYMBOL,
-  rotateArrow,
-} from './utils.js';
-import { getRateData } from './api.js';
-import { convert } from './convert.js';
+const utils = await import('./utils.js');
+const api = await import('./api.js');
+const convert = await import('./convert.js');
 
 let isOpenList = false;
 
@@ -16,58 +8,64 @@ function clickSelect(nameSelect) {
   isOpenList = !isOpenList;
 
   if (isOpenList) {
-    rotateArrow(nameSelect);
+    utils.rotateArrow(nameSelect);
   } else {
     nameSelect === 'base'
-      ? ARROW_BASE.classList.remove('arrow--rotate')
-      : ARROW_SYMBOL.classList.remove('arrow--rotate');
+      ? utils.ARROW_BASE.classList.remove('arrow--rotate')
+      : utils.ARROW_SYMBOL.classList.remove('arrow--rotate');
   }
 }
 
 function changeSelect() {
-  getRateData(SELECT_BASE.value, SELECT_SYMBOL.value);
+  api.getRateData(utils.SELECT_BASE.value, utils.SELECT_SYMBOL.value);
 }
 
 function changeInput(nameInput) {
-  while (INPUT_BASE.value.charAt(0) === '0') {
-    if (INPUT_BASE.value.length === 1 || INPUT_BASE.value.charAt(1) == '.') {
+  while (utils.INPUT_BASE.value.charAt(0) === '0') {
+    if (
+      utils.INPUT_BASE.value.length === 1 ||
+      utils.INPUT_BASE.value.charAt(1) == '.'
+    ) {
       break;
     }
 
-    INPUT_BASE.value = INPUT_BASE.value.substr(1, INPUT_BASE.value.length - 1);
+    utils.INPUT_BASE.value = utils.INPUT_BASE.value.substr(
+      1,
+      utils.INPUT_BASE.value.length - 1
+    );
   }
 
   switch (nameInput) {
     case 'base':
-      if (INPUT_BASE.value === '') {
-        INPUT_SYMBOL.value = '';
+      if (utils.INPUT_BASE.value === '') {
+        utils.INPUT_SYMBOL.value = '';
 
         return null;
       }
 
-      convert(nameInput);
+      convert.convert(nameInput);
       break;
 
     case 'symbol':
-      if (INPUT_SYMBOL.value === '') {
-        INPUT_BASE.value = '';
+      if (utils.INPUT_SYMBOL.value === '') {
+        utils.INPUT_BASE.value = '';
 
         return null;
       }
 
-      convert(nameInput);
+      convert.convert(nameInput);
       break;
   }
 }
 
-SELECT_BASE.addEventListener('click', () => clickSelect('base'));
-SELECT_SYMBOL.addEventListener('click', () => clickSelect('symbol'));
+utils.SELECT_BASE.addEventListener('click', () => clickSelect('base'));
+utils.SELECT_SYMBOL.addEventListener('click', () => clickSelect('symbol'));
 
-SELECT_BASE.addEventListener('change', () => changeSelect());
-SELECT_SYMBOL.addEventListener('change', () => changeSelect());
+utils.SELECT_BASE.addEventListener('change', () => changeSelect());
+utils.SELECT_SYMBOL.addEventListener('change', () => changeSelect());
 
-INPUT_BASE.addEventListener('input', () => changeInput('base'));
-INPUT_SYMBOL.addEventListener('input', () => changeInput('symbol'));
+utils.INPUT_BASE.addEventListener('input', () => changeInput('base'));
+utils.INPUT_SYMBOL.addEventListener('input', () => changeInput('symbol'));
 
 window.addEventListener('click', (event) => {
   if (
@@ -75,7 +73,7 @@ window.addEventListener('click', (event) => {
     !event.target.className.includes('select')
   ) {
     isOpenList = false;
-    ARROW_BASE.classList.remove('arrow--rotate');
-    ARROW_SYMBOL.classList.remove('arrow--rotate');
+    utils.ARROW_BASE.classList.remove('arrow--rotate');
+    utils.ARROW_SYMBOL.classList.remove('arrow--rotate');
   }
 });

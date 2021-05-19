@@ -1,18 +1,13 @@
-import {
-  SELECT_BASE,
-  SELECT_SYMBOL,
-  INPUT_BASE,
-  INPUT_SYMBOL,
-} from './utils.js';
+const utils = await import('./utils.js');
 
 const ERROR = document.querySelector('.error');
 
 const ARRAY_OF_ELEMENTS = [
   ERROR,
-  INPUT_BASE,
-  INPUT_SYMBOL,
-  SELECT_BASE,
-  SELECT_SYMBOL,
+  utils.INPUT_BASE,
+  utils.INPUT_SYMBOL,
+  utils.SELECT_BASE,
+  utils.SELECT_SYMBOL,
 ];
 const ARRAY_OF_CLASSES = [
   'error--visible',
@@ -29,11 +24,11 @@ export function showError(error) {
     ARRAY_OF_ELEMENTS[i].classList.add(ARRAY_OF_CLASSES[i]);
   }
 
-  INPUT_BASE.disabled = true;
-  INPUT_SYMBOL.disabled = true;
+  utils.INPUT_BASE.disabled = true;
+  utils.INPUT_SYMBOL.disabled = true;
 
-  INPUT_BASE.value = '';
-  INPUT_SYMBOL.value = '';
+  utils.INPUT_BASE.value = '';
+  utils.INPUT_SYMBOL.value = '';
 }
 
 export function hideError() {
@@ -41,8 +36,8 @@ export function hideError() {
     ARRAY_OF_ELEMENTS[i].classList.remove(ARRAY_OF_CLASSES[i]);
   }
 
-  INPUT_BASE.disabled = false;
-  INPUT_SYMBOL.disabled = false;
+  utils.INPUT_BASE.disabled = false;
+  utils.INPUT_SYMBOL.disabled = false;
 
   setTimeout(() => (ERROR.innerHTML = '&nbsp;'), 600);
 }

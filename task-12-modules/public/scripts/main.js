@@ -1,9 +1,10 @@
-import { showDate } from './date.js';
-import { getRateData } from './api.js';
-import { createList } from './createList.js';
-import { DEFAULT_BASE_CODE, DEFAULT_SYMBOL_CODE } from './utils.js';
+const api = await import('./api.js');
+const date = await import('./date.js');
+const utils = await import('./utils.js');
+const listener = await import('./listener.js');
+const createList = await import('./createList.js');
 
-showDate();
-createList('base');
-createList('symbol');
-getRateData(DEFAULT_BASE_CODE, DEFAULT_SYMBOL_CODE);
+date.showDate();
+createList.createList('base');
+createList.createList('symbol');
+api.getRateData(utils.DEFAULT_BASE_CODE, utils.DEFAULT_SYMBOL_CODE);

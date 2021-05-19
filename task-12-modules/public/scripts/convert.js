@@ -1,25 +1,20 @@
-import {
-  INPUT_BASE,
-  INPUT_SYMBOL,
-  setBaseInput,
-  setSymbolInput,
-  values,
-} from './utils.js';
+const utils = await import('./utils.js');
 
 export function convert(inputName) {
   switch (inputName) {
     case undefined:
     case 'base':
-      const SYMBOL_RESULT = Number(INPUT_BASE.value) * values.symbol;
+      const SYMBOL_RESULT =
+        Number(utils.INPUT_BASE.value) * utils.values.symbol;
 
-      setSymbolInput(SYMBOL_RESULT);
+      utils.setSymbolInput(SYMBOL_RESULT);
       break;
 
     case 'symbol':
       const BASE_RESULT =
-        (values.base / values.symbol) * Number(INPUT_SYMBOL.value);
+        (utils.values.base / values.symbol) * Number(utils.INPUT_SYMBOL.value);
 
-      setBaseInput(BASE_RESULT);
+      utils.setBaseInput(BASE_RESULT);
       break;
   }
 }
