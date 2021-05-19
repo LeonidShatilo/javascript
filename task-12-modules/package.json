@@ -1,0 +1,17 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "The task of dividing the application into modules and running it on the server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "start http://localhost:3000 && nodemon index.js"
+  },
+  "author": "Leonid Shatilo <shatiloleonid@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
