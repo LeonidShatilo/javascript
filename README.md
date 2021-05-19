@@ -136,6 +136,7 @@ For the demonstration you need to clone the repository, install the dependencies
 
 ```shell
 $ git clone https://github.com/LeonidShatilo/frontend-lab
+$ cd frontend-lab/task-12-modules
 $ npm install
 $ npm run start
 ```
