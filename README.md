@@ -124,3 +124,20 @@ The Russian quote is given. Find most frequent letters.
 - Check working status of app for different browsers.
 
 ---
+
+### Task 12. Modules
+
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-12-modules)
+
+- Split your code from the previous task to some modules (at least 2).
+- Implement dynamic import for a module.
+
+For the demonstration you need to clone the repository, install the dependencies for this task and start the server.
+
+```shell
+$ git clone https://github.com/LeonidShatilo/frontend-lab
+$ npm install
+$ npm run start
+```
+
+---
