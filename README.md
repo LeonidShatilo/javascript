@@ -2,7 +2,8 @@
 
 ### Task 1. Type Comparison
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-01-type-comparison/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-01-type-comparison)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-01-type-comparison/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-01-type-comparison)
 
 Make an analysis of strict and non-strict comparison operators, as well as mathematical calculations between different data types.
 
@@ -10,7 +11,8 @@ Make an analysis of strict and non-strict comparison operators, as well as mathe
 
 ### Task 2. Object Gauss
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-02-object-gauss/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-02-object-gauss)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-02-object-gauss/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-02-object-gauss)
 
 The following function is provided:
 
@@ -39,7 +41,8 @@ function randn_bm() {
 
 ### Task 3. Sum of Range
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-03-sum-of-range/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-03-sum-of-range)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-03-sum-of-range/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-03-sum-of-range)
 
 - Implement function `range(min, max)` that can return sum of integer numbers in range [min, max].
 - Consider edge cases: result is greater than `Number.MAX_SAFE_INTEGER`, argument is not a number, min > max, etc.
@@ -49,7 +52,8 @@ function randn_bm() {
 
 ### Task 4. Memory Managment
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-04-memory-managment/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-04-memory-managment)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-04-memory-managment/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-04-memory-managment)
 
 - Implement a function that leads to the stack overflow issue.
 - Implement a function that can affect memory leak issue.
@@ -58,7 +62,8 @@ function randn_bm() {
 
 ### Task 5. Inheritance
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-05-inheritance/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-05-inheritance)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-05-inheritance/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-05-inheritance)
 
 - Describe base class Entity that can store name.
 - Implement child classes Stuff, Box, User. Box can store some stuff[]. Every box belongs to a user.
@@ -68,7 +73,8 @@ function randn_bm() {
 
 ### Task 6. Arrays
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-06-arrays/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-06-arrays)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-06-arrays/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-06-arrays)
 
 The Russian quote is given. Find most frequent letters.
 
@@ -78,7 +84,8 @@ The Russian quote is given. Find most frequent letters.
 
 ### Task 7. Tic-Tac-Toe
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-07-tic-tac-toe/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-07-tic-tac-toe)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-07-tic-tac-toe/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-07-tic-tac-toe)
 
 - Using JavaScript constructs on page Tic-Tac-Toe layout.
 - Add possibility to interact with layout by mouse click (add «X» or «O»).
@@ -88,7 +95,8 @@ The Russian quote is given. Find most frequent letters.
 
 ### Task 8. Table
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-08-table/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-08-table)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-08-table/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-08-table)
 
 - Add to HTML page table with header and some rows.
 - Add to header event listener to implement sorting functionality across the table data (alphabetical).
@@ -98,7 +106,8 @@ The Russian quote is given. Find most frequent letters.
 
 ### Task 9. Asynchrony
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-09-asynchrony/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-09-asynchrony)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-09-asynchrony/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-09-asynchrony)
 
 - Develop 4 function that can perform operations `+, -, *, /` but return result with some random delay (> than 1 sec).
 - Create stack calculation module that can interact with mentioned before functions and handle Reverse Polish Notation input.
@@ -108,7 +117,8 @@ The Russian quote is given. Find most frequent letters.
 
 ### Task 10. Network Interaction
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-10-network-interaction/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-10-network-interaction)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-10-network-interaction/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-10-network-interaction)
 
 - Develop a page with two dropdowns «Base» and «Symbol».
 - Values of selections should invoke render of currency rates from https://api.ratesapi.io/api/latest (link on the documentation https://ratesapi.io/documentation/).
@@ -118,7 +128,8 @@ The Russian quote is given. Find most frequent letters.
 
 ### Task 11. Babel Compiler
 
-[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-11-babel-compiler/dist/index) [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-11-babel-compiler)
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-11-babel-compiler/dist/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-11-babel-compiler)
 
 - Convert your code from the previous task by the Babel transpiler to ES5 version.
 - Check working status of app for different browsers.
