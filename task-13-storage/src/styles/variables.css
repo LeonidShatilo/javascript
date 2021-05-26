@@ -1,0 +1,24 @@
+:root {
+  --primary-hue-sat: 0 0%;
+  --invalid-color: #ff3434;
+}
+
+html[data-theme='light'] {
+  --lightness-1: 100%;
+  --lightness-2: 90%;
+  --lightness-3: 60%;
+  --lightness-4: 50%;
+  --lightness-5: 20%;
+  --lightness-6: 10%;
+  --lightness-7: 0%;
+}
+
+html[data-theme='dark'] {
+  --lightness-1: 10%;
+  --lightness-2: 10%;
+  --lightness-3: 55%;
+  --lightness-4: 30%;
+  --lightness-5: 85%;
+  --lightness-6: 90%;
+  --lightness-7: 100%;
+}

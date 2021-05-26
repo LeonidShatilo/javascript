@@ -1,0 +1,10 @@
+.greeting::selection {
+  background: hsl(var(--primary-hue-sat) var(--lightness-6));
+  color: hsl(var(--primary-hue-sat) var(--lightness-2));
+}
+
+.title::selection,
+input::selection {
+  background: hsl(var(--primary-hue-sat) var(--lightness-2));
+  color: hsl(var(--primary-hue-sat) var(--lightness-6));
+}
