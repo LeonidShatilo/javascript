@@ -121,7 +121,7 @@ The Russian quote is given. Find most frequent letters.
 [![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-10-network-interaction)
 
 - Develop a page with two dropdowns «Base» and «Symbol».
-- Values of selections should invoke render of currency rates from https://api.ratesapi.io/api/latest (link on the documentation https://ratesapi.io/documentation/).
+- Values of selections should invoke render of currency rates from https://free.currencyconverterapi.com/ (link on the documentation https://www.currencyconverterapi.com/docs).
 - Handle possible error cases.
 
 ---
