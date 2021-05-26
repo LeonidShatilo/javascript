@@ -6,7 +6,7 @@ export const ARROW_BASE = document.querySelector('.base__arrow');
 export const ARROW_SYMBOL = document.querySelector('.symbol__arrow');
 
 export const DEFAULT_BASE_CODE = 'USD';
-export const DEFAULT_SYMBOL_CODE = 'CAD';
+export const DEFAULT_SYMBOL_CODE = 'BYN';
 
 export let values = {
   base: 1,
