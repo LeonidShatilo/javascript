@@ -1,0 +1,9 @@
+export const HTML = document.documentElement;
+export const CHECKBOX = document.querySelector('.switch__checkbox');
+export const FORM_ELEM = document.querySelector('form');
+export const FIRST_NAME = document.querySelector('.first-name');
+export const LAST_NAME = document.querySelector('.last-name');
+export const CONTENT = document.querySelector('.content-wrapper');
+export const LOGIN_BOX = document.querySelector('.login-box');
+export const GREETING = document.querySelector('.greeting');
+export const LOGOUT_BUTTON = document.querySelector('.logout-button');
