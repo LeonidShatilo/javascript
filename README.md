@@ -153,3 +153,10 @@ $ npm run start
 ```
 
 ---
+
+### Task 13. Storage
+
+[![DEMO](https://img.shields.io/badge/-DEMO-blue?style=flat)](https://leonidshatilo.github.io/frontend-lab/task-13-storage/)
+[![Code Review](https://img.shields.io/badge/-Code_Review-orange?style=flat)](https://github.com/LeonidShatilo/frontend-lab/tree/master/task-13-storage)
+
+Develop a page with the stored state that can «restore» user name and predefined theme (light or dark).

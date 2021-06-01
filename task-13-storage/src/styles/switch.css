@@ -1,0 +1,48 @@
+.switch {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 57px;
+  height: 30px;
+  margin-right: 1.2rem;
+}
+
+.switch__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(var(--primary-hue-sat) var(--lightness-5));
+  border-radius: 15px;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.switch__slider::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: hsl(var(--primary-hue-sat) var(--lightness-1));
+  transform: translateY(-50%);
+  transition: transform 0.5s, width 0.5s, background 0.5s;
+}
+
+.switch__checkbox {
+  visibility: hidden;
+  opacity: 0;
+}
+
+html[data-theme='dark'] > body > header > .switch > .switch__slider::before,
+.switch__checkbox:checked + .switch__slider::before {
+  background-color: hsl(var(--primary-hue-sat) var(--lightness-1));
+}
+
+html[data-theme='dark'] > body > header > .switch > .switch__slider::before,
+.switch__checkbox:checked + .switch__slider::before {
+  transform: translate(26px, -50%);
+}

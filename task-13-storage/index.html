@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.setAttribute(
+        'data-theme',
+        localStorage.theme ?? 'light'
+      );
+    </script>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link type="image/ico" rel="icon" href="#" />
+    <title>Themes Switcher</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="logout-button hidden">logout</button>
+      <label class="switch">
+        <input class="switch__checkbox" type="checkbox" />
+        <span class="switch__slider"></span>
+      </label>
+    </header>
+    <div class="content-wrapper">
+      <h1 class="greeting"></h1>
+      <div class="login-box hidden">
+        <h2 class="title">Please introduce yourself</h2>
+        <form>
+          <div class="user-box">
+            <input
+              type="text"
+              name="firstName"
+              class="first-name"
+              pattern="[A-Za-z\s\b-]{1,20}"
+              title="Please use only Latin letters for filling this form. No more than 20 letters are allowed."
+              autocomplete="off"
+              required
+            />
+            <label>First Name</label>
+          </div>
+          <div class="user-box">
+            <input
+              type="text"
+              name="lastName"
+              class="last-name"
+              pattern="[A-Za-z\s\b-]{1,20}"
+              title="Please use only Latin letters for filling this form. No more than 20 letters are allowed."
+              autocomplete="off"
+              required
+            />
+            <label>Last Name</label>
+          </div>
+          <div class="button-wrapper">
+            <button type="submit" class="submit-button">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>
