@@ -1,17 +1,17 @@
 import { CHECKBOX, LOGIN_BOX, GREETING, LOGOUT_BUTTON } from './elements.js';
-import { setTheme } from './theme.js';
+import { setTheme, LIGHT, DARK } from './theme.js';
 
 export function getThemeFromLocalStorage() {
   const THEME = localStorage.getItem('theme');
 
   switch (THEME) {
     default:
-    case 'light':
-      setTheme('light');
+    case LIGHT:
+      setTheme(LIGHT);
       break;
 
-    case 'dark':
-      setTheme('dark');
+    case DARK:
+      setTheme(DARK);
       CHECKBOX.checked = true;
       break;
   }
